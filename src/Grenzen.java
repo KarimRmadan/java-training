@@ -13,6 +13,8 @@ public class Grenzen {
         System.out.println(0.1 + 0.2 == 0.3);
         System.out.println(1 + 2 == 3);
 
+        System.out.printf("%,d",maximaleGroesse);
+
         /*double kann bestimmte Dezimalzahlen nicht exakt darstellen, wodurch Rundungsfehler entstehen können.
         int speichert ganze Zahlen innerhalb seines Wertebereichs exakt, deshalb ist 1 + 2 == 3 tatsächlich true.
          */

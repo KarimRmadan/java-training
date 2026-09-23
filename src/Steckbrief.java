@@ -14,10 +14,18 @@ public class Steckbrief {
 
         double anteilSchlaf = 8.0/24.0;
 
-        System.out.printf("Vorname: \t\t\t\t%s\nAlter in Jahren: \t\t%d\nGröße in Metern: \t\t%.2f\nLieblingsbuchstabe: \t%c\nKaffee Trinker?: \t\t%s\nGeburtsjahr: \t\t\t%d\nGröße in CM: \t\t\t%d"
+        System.out.printf("Vorname: \t\t\t\t%s\n" +
+                        "Alter in Jahren: \t\t%d\n" +
+                        "Größe in Metern: \t\t%.2f\n" +
+                        "Lieblingsbuchstabe: \t%c\n" +
+                        "Kaffee Trinker?: \t\t%s\n" +
+                        "Geburtsjahr: \t\t\t%d\n" +
+                        "Größe in CM: \t\t\t%d"
                 ,vorname,alterInJahren,groesseInMetern,lieblingsBuchstabe,istKaffeeTrinker? "Ja": "Nein",geburtsjahr,groesseInCM);
 
-        System.out.printf("\n\nGelebte Tage: \t\t\t%d\nGelebte Sekunden:\t\t%d\nUngefähre Herzschläge: \t%d",
+        System.out.printf("\n\nGelebte Tage: \t\t\t%d\n" +
+                        "Gelebte Sekunden:\t\t%d\n" +
+                        "Ungefähre Herzschläge: \t%d",
                 gelebteTage,gelebteSekunden,ungefaehreHerzschlaege);
 
         System.out.println("\n\nAnteil des verschlafenen Lebens: " + (8/24) + "\nAnteil des verschlafenen Lebens: " + (8.0/24.0));
