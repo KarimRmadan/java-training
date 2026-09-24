@@ -4,6 +4,7 @@ public class Kassenbon {
     static void main() {
         Scanner scanner = new Scanner(System.in);
 
+        //Eingaben einlesen
         System.out.println("Produktname: ");
         String produktName = scanner.nextLine();
 
@@ -21,22 +22,26 @@ public class Kassenbon {
                 antwortLebensmittel.equalsIgnoreCase("j");
 
 
+        //Preise in Cent beträge umwandeln
         int preisInCent = (int) Math.round(preisProStueck * 100);
 
         int nettoInCent = preisInCent * menge;
 
         int steuersatz;
 
+        //erforderlichen steuersatz ermitteln
         if (istLebensmittel) {
             steuersatz = 7;
         } else {
             steuersatz = 19;
         }
 
+        //Steuersatz und bruttowert berechnen
         int steuerInCent = nettoInCent * steuersatz / 100;
 
         int bruttoInCent = nettoInCent + steuerInCent;
 
+        //bon design erstellt und mit benötigten werten bestückt
         StringBuilder bon = new StringBuilder();
 
         bon.append("\n---Kassenbon---\n");
@@ -57,6 +62,7 @@ public class Kassenbon {
                 bruttoInCent % 100)).append("\n");
 
 
+        //Ausgabe
         System.out.println(bon);
 
 
