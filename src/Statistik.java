@@ -13,6 +13,10 @@ public class Statistik {
             werte[i] = scanner.nextInt();
         }
 
+        //Methodenaufrufe
+        System.out.println(durchschnitt(werte));
+        System.out.println(minimum(werte));
+
 
         // EINZELNE SCHLEIFEN
 
@@ -92,5 +96,25 @@ public class Statistik {
         }
 
         scanner.close();
+        System.out.println("\n\n\n");
+
+    }
+    //Methoden erstellt
+    static double durchschnitt (int[]werte){
+        double summe = 0;
+        for (int wert : werte){
+            summe = summe + wert;
+
+        }return summe / werte.length;
+    }
+    static int minimum (int[]werte){
+        int min = werte[0];
+
+        for (int wert : werte) {
+            if (wert < min) {
+                min = wert;
+            }
+        }
+        return min;
     }
 }
